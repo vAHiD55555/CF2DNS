@@ -10,9 +10,16 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -e {0}
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          NODE_VERSION: '20'
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
@@ -25,7 +32,7 @@ jobs:
       - name: Configure Git
         run: |
           git config --global user.email "ircfspace@gmail.com"
-          git config --global user.name "ircfspace"
+          git config --global user.name "IRCF"
 
       - name: Commit changes
         run: |
