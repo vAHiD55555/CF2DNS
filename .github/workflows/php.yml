@@ -6,25 +6,33 @@ on:
     branches: [ "main" ]
   schedule:
     - cron: '*/30 * * * *'
-    
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
-      
+
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.0'
-          
+
       - name: Execute PHP script
+        run: php crawler.php
+
+      - name: Configure Git
         run: |
-          php crawler.php
           git config --global user.email "ircfspace@gmail.com"
-          git config --global user.name "IRCF"
-          git config credential.helper store
+          git config --global user.name "ircfspace"
+
+      - name: Commit changes
+        run: |
           git add -A
-          git commit -m "Automatic update - $(TZ='Asia/Tehran' date '+%Y-%m-%d %H:%M')"
-          git push
+          git diff --cached --quiet || git commit -m "Automatic update - $(TZ='Asia/Tehran' date '+%Y-%m-%d %H:%M')"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
