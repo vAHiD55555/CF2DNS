@@ -5,3 +5,4 @@
 * IPv6
 
 https://ircf.space/list.php
+https://stock.hostmonit.com/CloudFlareYes
