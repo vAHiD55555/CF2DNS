@@ -1,7 +1,9 @@
-name: "Crawler"
+name: "Collect IPs"
 
 on:
   workflow_dispatch:
+  push:
+    branches: [ "main" ]
   schedule:
     - cron: '*/30 * * * *'
     
@@ -21,8 +23,8 @@ jobs:
         run: |
           php crawler.php
           git config --global user.email "ircfspace@gmail.com"
-          git config --global user.name "ircfspace"
+          git config --global user.name "IRCF"
           git config credential.helper store
           git add -A
-          git commit -m "🚀 Updated - $(TZ='Asia/Tehran' date '+%Y-%m-%d %H:%M:%S')"
+          git commit -m "Automatic update - $(TZ='Asia/Tehran' date '+%Y-%m-%d %H:%M')"
           git push
