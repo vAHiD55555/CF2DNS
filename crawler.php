@@ -46,3 +46,10 @@
         }
         file_put_contents("list/ipv6.json", json_encode(array_slice($ipv6, 0, 25), JSON_PRETTY_PRINT));
     }
+
+    $ips = [];
+    if ( !empty($ipv4) && !empty($ipv6) ) {
+        $ips['ipv4'] = $ipv4;
+        $ips['ipv6'] = $ipv6;
+        file_put_contents("list/export.json", json_encode(array_slice($ips, 0, 25), JSON_PRETTY_PRINT));
+    }
