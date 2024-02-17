@@ -27,12 +27,12 @@
         }
     }
 
-    $getListIpv4 = get_optimization_ip('v4');
+    $getListIpv4 = get_optimization_ip();
     $ipv4 = [];
-    if ( isset($getListIpv['code'], $getListIpv4['total']) &&
+    if ( isset($getListIpv4['code'], $getListIpv4['total']) &&
         $getListIpv4['code'] === 200 && $getListIpv4['total'] > 0 ) {
         foreach ($getListIpv4['info'] as $key => $l) {
-            $array = array_merge($ipv4, $l);
+            $ipv4 = array_merge($ipv4, $l);
         }
         file_put_contents("list/ipv4.json", json_encode(array_slice($ipv4, 0, 25), JSON_PRETTY_PRINT));
     }
@@ -42,7 +42,7 @@
     if ( isset($getListIpv6['code'], $getListIpv6['total']) &&
         $getListIpv6['code'] === 200 && $getListIpv6['total'] > 0 ) {
         foreach ($getListIpv6['info'] as $key => $l) {
-            $array = array_merge($ipv6, $l);
+            $ipv6 = array_merge($ipv6, $l);
         }
         file_put_contents("list/ipv6.json", json_encode(array_slice($ipv6, 0, 25), JSON_PRETTY_PRINT));
     }
