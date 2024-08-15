@@ -1,25 +1,5 @@
 [
     {
-        "colo": "Default",
-        "ip": "172.67.137.158",
-        "latency": 278,
-        "line": "CM",
-        "loss": 0,
-        "node": "51C_SDCM",
-        "speed": 965,
-        "time": "2024-08-15 00:17:40"
-    },
-    {
-        "colo": "SJC",
-        "ip": "172.67.214.145",
-        "latency": 205,
-        "line": "CM",
-        "loss": 0,
-        "node": "HOME_CM",
-        "speed": 645,
-        "time": "2024-08-15 00:50:23"
-    },
-    {
         "colo": "HKG",
         "ip": "162.159.136.168",
         "latency": 110,
@@ -30,24 +10,44 @@
         "time": "2024-08-15 01:00:24"
     },
     {
-        "colo": "HKG",
-        "ip": "172.67.3.27",
-        "latency": 125,
+        "colo": "SEA",
+        "ip": "172.67.187.124",
+        "latency": 170,
         "line": "CM",
         "loss": 0,
         "node": "HOME_CM",
-        "speed": 590,
-        "time": "2024-08-14 23:50:23"
+        "speed": 555,
+        "time": "2024-08-15 01:20:25"
     },
     {
         "colo": "SEA",
-        "ip": "172.67.167.148",
-        "latency": 216,
+        "ip": "172.67.163.120",
+        "latency": 188,
         "line": "CM",
         "loss": 0,
         "node": "SDO_HNCM",
-        "speed": 550,
-        "time": "2024-08-15 00:39:33"
+        "speed": 545,
+        "time": "2024-08-15 01:19:33"
+    },
+    {
+        "colo": "Default",
+        "ip": "172.67.150.117",
+        "latency": 166,
+        "line": "CM",
+        "loss": 0,
+        "node": "51C_SDCM",
+        "speed": 290,
+        "time": "2024-08-15 01:27:28"
+    },
+    {
+        "colo": "HKG",
+        "ip": "172.67.72.79",
+        "latency": 125,
+        "line": "CM",
+        "loss": 0,
+        "node": "LOLIPA_SDCU",
+        "speed": 250,
+        "time": "2024-08-15 01:23:35"
     },
     {
         "colo": "SJC",
@@ -71,13 +71,13 @@
     },
     {
         "colo": "IAD",
-        "ip": "172.67.93.178",
-        "latency": 234,
+        "ip": "172.67.122.187",
+        "latency": 204,
         "line": "CT",
         "loss": 0,
         "node": "SDO_ZJCT",
-        "speed": 325,
-        "time": "2024-08-15 00:54:06"
+        "speed": 560,
+        "time": "2024-08-15 01:20:51"
     },
     {
         "colo": "SJC",
@@ -90,24 +90,14 @@
         "time": "2024-08-15 00:56:05"
     },
     {
-        "colo": "SJC",
-        "ip": "104.19.119.80",
-        "latency": 127,
+        "colo": "LHR",
+        "ip": "172.67.198.90",
+        "latency": 182,
         "line": "CT",
         "loss": 0,
-        "node": "QYZJBGP",
-        "speed": 245,
-        "time": "2024-08-15 00:55:49"
-    },
-    {
-        "colo": "HKG",
-        "ip": "162.159.129.207",
-        "latency": 120,
-        "line": "CU",
-        "loss": 0,
-        "node": "LOLIPA_SDCU",
-        "speed": 850,
-        "time": "2024-08-14 23:13:35"
+        "node": "SDO_ZJCT",
+        "speed": 275,
+        "time": "2024-08-15 01:20:53"
     },
     {
         "colo": "LAX",
@@ -121,6 +111,16 @@
     },
     {
         "colo": "LAX",
+        "ip": "172.64.195.141",
+        "latency": 230,
+        "line": "CU",
+        "loss": 0,
+        "node": "LOLIPA_SDCU",
+        "speed": 420,
+        "time": "2024-08-15 01:23:35"
+    },
+    {
+        "colo": "LAX",
         "ip": "172.67.254.150",
         "latency": 254,
         "line": "CU",
@@ -131,16 +131,6 @@
     },
     {
         "colo": "LAX",
-        "ip": "172.67.36.233",
-        "latency": 244,
-        "line": "CU",
-        "loss": 0,
-        "node": "LOLIPA_SDCU",
-        "speed": 405,
-        "time": "2024-08-14 23:43:36"
-    },
-    {
-        "colo": "LAX",
         "ip": "172.67.85.49",
         "latency": 322,
         "line": "CU",
@@ -148,5 +138,15 @@
         "node": "LOLIPA_SDCU",
         "speed": 275,
         "time": "2024-08-15 00:33:35"
+    },
+    {
+        "colo": "HKG",
+        "ip": "172.67.72.79",
+        "latency": 125,
+        "line": "CU",
+        "loss": 0,
+        "node": "LOLIPA_SDCU",
+        "speed": 250,
+        "time": "2024-08-15 01:23:36"
     }
 ]
