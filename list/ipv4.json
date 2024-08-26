@@ -1,33 +1,43 @@
 [
     {
         "colo": "HKG",
-        "ip": "172.64.164.120",
-        "latency": 194,
+        "ip": "162.159.255.171",
+        "latency": 197,
         "line": "CM",
         "loss": 0,
         "node": "HOME_CM",
-        "speed": 1610,
-        "time": "2024-08-26 05:30:21"
-    },
-    {
-        "colo": "Default",
-        "ip": "172.64.165.184",
-        "latency": 201,
-        "line": "CM",
-        "loss": 0,
-        "node": "51C_SDCM",
-        "speed": 905,
-        "time": "2024-08-26 05:35:39"
+        "speed": 1255,
+        "time": "2024-08-26 05:50:21"
     },
     {
         "colo": "SEA",
-        "ip": "172.67.167.88",
-        "latency": 141,
+        "ip": "172.67.74.80",
+        "latency": 201,
         "line": "CM",
         "loss": 0,
         "node": "SDO_HNCM",
-        "speed": 775,
-        "time": "2024-08-26 05:29:35"
+        "speed": 835,
+        "time": "2024-08-26 05:39:35"
+    },
+    {
+        "colo": "Default",
+        "ip": "172.67.100.29",
+        "latency": 202,
+        "line": "CM",
+        "loss": 0,
+        "node": "51C_SDCM",
+        "speed": 745,
+        "time": "2024-08-26 05:45:28"
+    },
+    {
+        "colo": "HKG",
+        "ip": "172.67.1.129",
+        "latency": 88,
+        "line": "CM",
+        "loss": 0,
+        "node": "SDO_HNCM",
+        "speed": 640,
+        "time": "2024-08-26 05:49:35"
     },
     {
         "colo": "Default",
@@ -38,16 +48,6 @@
         "node": "51C_SDCM",
         "speed": 575,
         "time": "2024-08-26 05:35:40"
-    },
-    {
-        "colo": "Default",
-        "ip": "198.41.209.186",
-        "latency": 50,
-        "line": "CM",
-        "loss": 0,
-        "node": "51C_SDCM",
-        "speed": 310,
-        "time": "2024-08-26 05:29:59"
     },
     {
         "colo": "SJC",
@@ -70,14 +70,24 @@
         "time": "2024-08-26 05:35:51"
     },
     {
-        "colo": "SJC",
-        "ip": "104.19.98.29",
-        "latency": 128,
+        "colo": "IAD",
+        "ip": "172.67.9.201",
+        "latency": 193,
         "line": "CT",
         "loss": 0,
-        "node": "QYZJBGP",
+        "node": "SDO_ZJCT",
+        "speed": 620,
+        "time": "2024-08-26 05:47:49"
+    },
+    {
+        "colo": "SJC",
+        "ip": "104.19.85.82",
+        "latency": 131,
+        "line": "CT",
+        "loss": 0,
+        "node": "QIXJSCT",
         "speed": 295,
-        "time": "2024-08-26 05:25:36"
+        "time": "2024-08-26 05:43:20"
     },
     {
         "colo": "SJC",
@@ -88,16 +98,6 @@
         "node": "QYZJBGP",
         "speed": 290,
         "time": "2024-08-26 05:35:45"
-    },
-    {
-        "colo": "SJC",
-        "ip": "104.16.207.3",
-        "latency": 127,
-        "line": "CT",
-        "loss": 0,
-        "node": "QYZJBGP",
-        "speed": 245,
-        "time": "2024-08-26 05:25:10"
     },
     {
         "colo": "LAX",
@@ -120,6 +120,26 @@
         "time": "2024-08-26 05:33:34"
     },
     {
+        "colo": "LAX",
+        "ip": "172.64.134.169",
+        "latency": 179,
+        "line": "CU",
+        "loss": 0,
+        "node": "LOLIPA_SDCU",
+        "speed": 405,
+        "time": "2024-08-26 05:43:34"
+    },
+    {
+        "colo": "LAX",
+        "ip": "172.64.193.237",
+        "latency": 180,
+        "line": "CU",
+        "loss": 0,
+        "node": "LOLIPA_SDCU",
+        "speed": 295,
+        "time": "2024-08-26 05:43:34"
+    },
+    {
         "colo": "HKG",
         "ip": "162.159.128.165",
         "latency": 68,
@@ -128,25 +148,5 @@
         "node": "LOLIPA_SDCU",
         "speed": 242,
         "time": "2024-08-26 05:23:34"
-    },
-    {
-        "colo": "LAX",
-        "ip": "162.159.253.31",
-        "latency": 175,
-        "line": "CU",
-        "loss": 0,
-        "node": "LOLIPA_SDCU",
-        "speed": 230,
-        "time": "2024-08-26 05:23:33"
-    },
-    {
-        "colo": "LAX",
-        "ip": "172.67.107.245",
-        "latency": 175,
-        "line": "CU",
-        "loss": 0,
-        "node": "LOLIPA_SDCU",
-        "speed": 208,
-        "time": "2024-08-26 05:13:34"
     }
 ]
